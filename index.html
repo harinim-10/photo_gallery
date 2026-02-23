@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .photo {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px gray;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <div class="gallery">
+        <div class="photo">
+            <img src="image1.jpg" alt="Nature">
+            <div class="caption">Beautiful Nature</div>
+        </div>
+
+        <div class="photo">
+            <img src="image2.jpg" alt="Mountain">
+            <div class="caption">Mountain View</div>
+        </div>
+
+        <div class="photo">
+            <img src="image3.jpg" alt="Beach">
+            <div class="caption">Sunny Beach</div>
+        </div>
+
+        <div class="photo">
+            <img src="image4.jpg" alt="Forest">
+            <div class="caption">Green Forest</div>
+        </div>
+
+        <div class="photo">
+            <img src="image5.jpg" alt="City">
+            <div class="caption">City Lights</div>
+        </div>
+
+        <div class="photo">
+            <img src="image6.jpg" alt="Flowers">
+            <div class="caption">Colorful Flowers</div>
+        </div>
+    </div>
+
+</body>
+</html>
